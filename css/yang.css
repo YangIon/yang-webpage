@@ -79,6 +79,21 @@ transition-delay: 0s;
 .shadowing {
     box-shadow: 0px 4px 6px 3px rgba( 0, 0, 0, 0.2 ); 
 }
+@media screen and (max-width: 30em) {
+  .w-75-s {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 320px) and (min-width: 320px) {
+  .w-70-iphone5 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 1024px) {
+  .w-30-iPadP {
+    width: 30%;
+  }
+}
 
 /* Burger Menu */
 .burger {
