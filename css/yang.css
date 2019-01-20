@@ -94,6 +94,11 @@ transition-delay: 0s;
     width: 30%;
   }
 }
+@media screen and (max-width: 415px) and (min-width: 330px) {
+  .mt6-mobile {
+    margin-top: 5rem;
+  }
+}
 
 /* Burger Menu */
 .burger {
