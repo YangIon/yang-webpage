@@ -11,6 +11,8 @@
 .reenie-beanie {font-family: 'Reenie Beanie', cursive;}
 .indie-flower {font-family: 'Indie Flower', cursive;}
 .caveat {font-family: 'Caveat', cursive;}
+.crimson-text {font-family: 'Crimson Text', serif;}
+.overlock {font-family: 'Overlock', cursive;}
 
 /* Universal Tooling */
 @media only screen and (min-width: 48em) {
@@ -178,6 +180,15 @@ transition-delay: 0s;
   .min-hh-100 {
     min-width: 100vh;
   }
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  
 
 
   /* SVG Filters */
