@@ -36,25 +36,6 @@
     <body class="flex-column mw9 overflow-x-hidden bg-light-gray">
 
         <script src="scripts/parallax.js"></script>
-        <script>
-            window.onscroll = function() {
-                var fade = document.getElementsByClassName("fade-scroll");
-                var fade2 = document.getElementsByClassName("fade-scroll2");
-
-                var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-
-               let rowHeight = document.getElementById("parallax-row1").offsetHeight;
-               let imgHeight = 400;
-               let img2Height = 200;
-                
-                for (let i = 0; i < fade.length; i++) {
-                    let targetPID = (2) * rowHeight;
-                    let ratio = (targetPID - scrollTop) / rowHeight;
-                    fade[i].style.opacity = ratio;
-                    fade2[i].style.opacity = ratio;
-                }
-            };
-        </script>
 
         <!-- Title logo, Motto, Nav Menu -->
         <header class="tc shadow mw9 mt6-ns">
@@ -96,34 +77,34 @@
         <div class="min-vh-100 mw9 mt4-ns">
             
             <div id="parallax-row1" class="flex mt3 mh1">
-                <div id="parallax1" class="center mw5-ns w-50 fade-scroll pa0-ns pa1-m pa1">
+                <div id="parallax1" class="center mw5-ns w-50 pa0-ns pa1-m pa1">
                     <div class="db aspect-ratio aspect-ratio--1x1 grow">
                         <a href="profiles/perseverance/" role="img" aria-label="Perseverance" style="background-image:url(./img/perseverance.jpg);" class="bg-center cover aspect-ratio--object br-100 shadow-2"></a>
                     </div>
                 </div>
-                <div id="parallax2" class="center mw5-ns w-50 fade-scroll2 pa0-ns pa1-m pa1">
+                <div id="parallax2" class="center mw5-ns w-50 pa0-ns pa1-m pa1">
                     <div class="db aspect-ratio aspect-ratio--1x1 grow">
                         <a href="profiles/eight-years/" role="img" aria-label="Eight Years" style="background-image:url(./img/eight-years.jpg);" class="bg-center cover aspect-ratio--object br-100 shadow-2"></a>
                     </div>
                 </div>
-                <div id="parallax3" class="center mw5-ns w-50 fade-scroll pa0-ns pa1-m pa1">
+                <div id="parallax3" class="center mw5-ns w-50 pa0-ns pa1-m pa1">
                     <div class="db aspect-ratio aspect-ratio--1x1 grow">
                         <a href="profiles/familiar-strangers/" role="img" aria-label="Familiar Strangers" style="background-image:url(./img/familiar-strangers.jpg);" class="bg-center cover aspect-ratio--object br-100 shadow-2"></a>
                     </div>
                 </div>
             </div>
             <div id="parallax-row2" class="flex mt4 mh1">
-                <div id="parallax4" class="center mw5-ns w-50 fade-scroll2 pa0-ns pa1-m pa1">
+                <div id="parallax4" class="center mw5-ns w-50 pa0-ns pa1-m pa1">
                     <div class="db aspect-ratio aspect-ratio--1x1 grow">
                         <a href="profiles/big-boy/" role="img" aria-label="Big Boy" style="background-image:url(./img/big-boy.jpg);" class="bg-center cover aspect-ratio--object br-100 shadow-2"></a>
                     </div>
                 </div>
-                <div id="parallax5" class="center mw5-ns w-50 fade-scroll pa0-ns pa1-m pa1">
+                <div id="parallax5" class="center mw5-ns w-50 pa0-ns pa1-m pa1">
                     <div class="db aspect-ratio aspect-ratio--1x1 grow">
                         <a href="profiles/projections/" role="img" aria-label="Projections" style="background-image:url(./img/projections.jpg);" class="bg-center cover aspect-ratio--object br-100 shadow-2"></a>
                     </div>
                 </div>
-                <div id="parallax6" class="center mw5-ns w-50 fade-scroll2 pa0-ns pa1-m pa1">
+                <div id="parallax6" class="center mw5-ns w-50 pa0-ns pa1-m pa1">
                     <div class="db aspect-ratio aspect-ratio--1x1 grow">
                         <a href="profiles/blood-ties/" role="img" aria-label="Blood Ties" style="background-image:url(./img/blood-ties.jpg);" class="bg-center cover aspect-ratio--object br-100 shadow-2"></a>
                     </div>
