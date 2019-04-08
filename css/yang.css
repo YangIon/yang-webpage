@@ -13,6 +13,12 @@
 .caveat {font-family: 'Caveat', cursive;}
 .crimson-text {font-family: 'Crimson Text', serif;}
 .overlock {font-family: 'Overlock', cursive;}
+.stonestick {font-family: Stonestick;}
+
+@font-face {
+  font-family: Stonestick;
+  src: url(stonestick.otf);
+}
 
 /* Universal Tooling */
 @media only screen and (min-width: 48em) {
@@ -38,7 +44,7 @@
 #name-title::after {
   content:"Enthusing About People";
   display: block;
-  font: 18px 'Nothing You Could Do';
+  font: 15px 'Nothing You Could Do';
 }
 .z-999 {z-index: 999;}
 .dim-in-out {

@@ -17,12 +17,12 @@ let Parallax = {
 }
 
 let handleScrolling = () => {
-    Parallax.init(parallax1, 1);
-    Parallax.init(parallax2, 1.5);
-    Parallax.init(parallax3, 2);
+    Parallax.init(parallax1, 3);
+    Parallax.init(parallax2, 3);
+    Parallax.init(parallax3, 3);
     Parallax.init(parallax4, -1);
-    Parallax.init(parallax5, -1.5);
-    Parallax.init(parallax6, -2);
+    Parallax.init(parallax5, -1);
+    Parallax.init(parallax6, -1);
 }
 
 window.addEventListener('scroll', handleScrolling);

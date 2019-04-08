@@ -1,0 +1,32 @@
+body {
+    background-color: #232323;
+    color: #cdcdcd;
+}
+
+.nav-container {
+    height: 80px;
+}
+
+#navbar {
+    overflow: hidden;
+    transition: background-color 2s;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: background-color 2s;
+}
+
+.content {
+    padding: 80px;
+}
