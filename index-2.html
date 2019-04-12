@@ -170,9 +170,13 @@
             var st = window.pageYOffset || document.documentElement.scrollTop;
 
             if (st > scrollPos) {
-                navbar.classList.remove("sticky");
-                navbar.style.backgroundColor = "";
+                navbar.classList.add("title-out");
+                setTimeout(function() {
+                   navbar.classList.remove("sticky");
+                   navbar.style.backgroundColor = "";
+                   }, 1200); 
             } else {
+                navbar.classList.remove("title-out");
                 navbar.classList.add("sticky");
                 if (st == 0) {
                     navbar.style.backgroundColor = "";
@@ -182,6 +186,7 @@
             }
             scrollPos = st <= 0 ? 0 : st;
         }, false);
+        
     </script>
 </body>
 

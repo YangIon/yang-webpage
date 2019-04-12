@@ -9,7 +9,7 @@ body {
 
 #navbar {
     overflow: hidden;
-    transition: background-color 2s;
+    transition: background-color 1s, opacity 2s, visibility 1s;
 }
 
 #navbar a {
@@ -24,7 +24,12 @@ body {
     position: fixed;
     top: 0px;
     width: 100%;
-    transition: background-color 2s;
+}
+
+.title-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 2s linear;
 }
 
 .content {
