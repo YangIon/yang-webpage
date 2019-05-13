@@ -34,6 +34,10 @@ html {
     transition: visibility 1s, opacity 1s linear;
 }
 
+#test-g {
+    height: 1.8rem;
+}
+
 @media only screen and (min-width: 1200px) {
     #center-name:before {
         content: "";
