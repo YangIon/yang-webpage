@@ -44,22 +44,26 @@
         <div class="nav-container absolute">
             <nav id="navbar" class="flex-ns items-center justify-between mw9">
                 <div class="flex-ns mb0-ns ml4-ns ml3-ns mt0-ns mt2 tc">
-                    <img src="assets/yin-yang-logo.png" class="mw9 h3-ns h2 monochrome mt1" alt="home-title">
-                    <h1 class="f4 nova pre ml3-ns overflow-hidden" id="name-title">Y A N G</h1>
+                    <img src="assets/yin-yang-logo.png" class="mw9 h3-ns h2 monochrome mt1 mb1 invert" alt="home-title">
+                    <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden" id="name-title">Y A N G</h1>
                 </div>
-                <div class="flex mr7-ns mr0 handwritten">
-                    <a href="#home">Home</a>
-                    <a href="#news">Writing</a>
-                    <a href="#contact">Contact</a>
+                <div class="flex justify-center mr7-ns handwritten">
+                    <a href="#home" class="white dim">Home</a>
+                    <a href="#news" class="white dim">Writing</a>
+                    <a href="#contact" class="white dim">Contact</a>
                 </div>
             </nav>
         </div>
         <div>
             <div class="flex flex-column w-100 vh-100 justify-center items-center">
+                <div class="pa4 tc">
+                    <img src="img/big-boy.jpg" class="br-100 h4 w4 dib" alt="avatar">
+                </div>
                 <span class="f3 i">Hiya, hiya. I'm</span>
                 <span class="f1 pt3 b nova" id="center-name">YANG CHEN</span>
+
                 <span class="pt4 i">Writer. Boxer. Aspiring Software Engineer.</span>
-                <span class="pt1">(scroll down to learn more!)</span>
+                <span class="pt1 mb5">(scroll down to learn more!)</span>
             </div>
         </div>
         <div>
@@ -90,10 +94,12 @@
             } else {
                 navbar.classList.remove("title-out");
                 navbar.classList.add("sticky");
+                navbar.classList.add("shadow-3")
                 if (st == 0) {
                     navbar.style.backgroundColor = "";
+                    navbar.classList.remove("shadow-3");
                 } else {
-                    navbar.style.backgroundColor = "#336699";
+                    navbar.style.backgroundColor = "#000000";
                 }
             }
             scrollPos = st <= 0 ? 0 : st;

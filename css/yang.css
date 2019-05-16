@@ -77,7 +77,7 @@
 }
 
 #name-title::after {
-  content:"Enthusing About People";
+  content: "Enthusing About People";
   display: block;
   font: 15px 'Nothing You Could Do';
 }
@@ -144,24 +144,6 @@
   }
 }
 
-/* Nav Bar */
-.mh0 {
-  max-height: 0;
-}
-
-.mh-transition {
-  transition: max-height 0.5s ease-in-out;
-}
-
-.burger-check:checked~.mh0 {
-  max-height: 500px;
-  transition: max-height 0.7s ease-in-out;
-}
-
-.c--inherit {
-  color: inherit;
-}
-
 /* About */
 .hidden {
   visibility: hidden;
@@ -184,9 +166,6 @@
 .fadeIn {
   animation-name: fadeIn;
 }
-
-
-
 
 /* SVG Filters */
 .orng-filter {

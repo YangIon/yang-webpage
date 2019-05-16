@@ -1,9 +1,11 @@
+/* Body */
 body,
 html {
     background-color: #232323;
     color: #cdcdcd;
 }
 
+/* Navbar */
 .nav-container {
     height: 20px;
     width: 100%;
@@ -22,6 +24,7 @@ html {
     text-decoration: none;
 }
 
+/* DOM Element Additions */
 .sticky {
     position: fixed;
     top: 0px;
@@ -34,10 +37,11 @@ html {
     transition: visibility 1s, opacity 1s linear;
 }
 
-#test-g {
-    height: 1.8rem;
+.invert {
+    filter: invert(100%);
 }
 
+/* Title */
 @media only screen and (min-width: 1200px) {
     #center-name:before {
         content: "";
