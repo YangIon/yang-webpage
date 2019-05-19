@@ -24,9 +24,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="css/tachyons.min.css" />
     <link rel="stylesheet" href="css/yang.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/tachyons.min.css" />
 
     <!-- Icon Assets -->
     <link rel="icon" type="image/png" href="assets/yin-yang.png" />
@@ -44,13 +44,16 @@
         <div class="nav-container absolute">
             <nav id="navbar" class="flex-ns items-center justify-between mw9">
                 <div class="flex-ns mb0-ns ml4-ns ml3-ns mt0-ns mt2 tc">
-                    <img src="assets/yin-yang-logo.png" class="mw9 h3-ns h2 monochrome mt1 mb1 invert" alt="home-title">
+                    <a href="/" class="mt1">
+                        <img src="assets/yin-yang-logo.png" class="mw9 h3-ns h2 invert" alt="home-title">
+                    </a>
                     <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden" id="name-title">Y A N G</h1>
+
                 </div>
                 <div class="flex justify-center mr7-ns handwritten">
-                    <a href="#home" class="white dim">Home</a>
-                    <a href="#news" class="white dim">Writing</a>
-                    <a href="#contact" class="white dim">Contact</a>
+                    <a href="#home" class="white dim navbar-link">Home</a>
+                    <a href="#news" class="white dim navbar-link">Writing</a>
+                    <a href="#contact" class="white dim navbar-link">Contact</a>
                 </div>
             </nav>
         </div>
@@ -62,24 +65,43 @@
                 <span class="f3 i">Hiya, hiya. I'm</span>
                 <span class="f1 pt3 b nova" id="center-name">YANG CHEN</span>
 
-                <span class="pt4 i">Writer. Boxer. Aspiring Software Engineer.</span>
+                <span class="pt4 i">Writer. Boxer. Aspiring Web Developer.</span>
                 <span class="pt1 mb6">(scroll down to learn more!)</span>
             </div>
         </div>
+        <div class="pt0 pa7-ns">
+            <h1 class="tc">This is me in 3D.</h1>
+            <div class="flex flex-column items-center">
+                <div class="flex h5 mw5">
+                    <div>
+                        <h3>Placement</h3>
+                    </div>
+                    <div>
+                        <h3 class="tc">Physical</h3>
+                        <p>II'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm
+                            big on I'm big on I'm big on I'm big on 'm big on
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white mw5">
+                    <h3 class="tc">Mental</h3>
+                    <p>TII'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big
+                        on I'm big on I'm big on I'm big on 'm big on esting</p>
+                </div>
+                <div class="bg-white mw5">
+                    <h3 class="tc">Emotional</h3>
+                    <p>II'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big
+                        on I'm big on I'm big on I'm big on 'm big on </p>
+                </div>
+            </div>
+        </div>
         <div>
-            <ul>
-                <li>Testing</li>
-                <li>Testing</li>
-                <li>Testing</li>
-                <li>Testing</li>
-                <li>Testing</li>
-            </ul>
+            <h1 class="tc">My Work</h1>
         </div>
     </div>
 
-    <script src="scripts/sticky_navbar.js">
-      
-    </script>
+    <script src="scripts/sticky_navbar.js"></script>
+
 </body>
 
 </html>

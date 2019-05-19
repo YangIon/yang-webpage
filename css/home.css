@@ -16,7 +16,7 @@ html {
     transition: background-color 1s, opacity 0.5s, visibility 1s;
 }
 
-#navbar a {
+#navbar .navbar-link {
     float: left;
     display: block;
     text-align: center;
