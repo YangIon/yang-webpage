@@ -25,9 +25,9 @@
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/yang.css" />
-    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/tachyons.min.css" />
 
+    <link rel="stylesheet" href="css/home.css" />
     <!-- Icon Assets -->
     <link rel="icon" type="image/png" href="assets/yin-yang.png" />
 
@@ -40,64 +40,127 @@
 </head>
 
 <body>
-    <div id="container" class="flex flex-column">
-        <div class="nav-container absolute">
+    <div id="container" class="flex flex-column mw9">
+        <!--<div class="nav-container">
             <nav id="navbar" class="flex-ns items-center justify-between mw9">
-                <div class="flex-ns mb0-ns ml4-ns ml3-ns mt0-ns mt2 tc">
+                <div class="flex-ns mb0-ns ml4-ns justify-center mt0-ns mt2 tc">
                     <a href="/" class="mt1">
                         <img src="assets/yin-yang-logo.png" class="mw9 h3-ns h2 invert" alt="home-title">
                     </a>
                     <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden" id="name-title">Y A N G</h1>
+                </div>
+                <div class="flex justify-center mr7-ns mt3-m handwritten">
+                    <a href="#home" class="f5-ns f7 white dim navbar-link">Home</a>
+                    <a href="#writing" class="f5-ns f7 white dim navbar-link">Writing</a>
+                    <a href="#contact" class="f5-ns f7 white dim navbar-link">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropbtn navbar-link f5-ns f7 dim">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#" class="dim">Link 1</a>
+                            <a href="#" class="dim">Link 1</a>
+                            <a href="#" class="dim">Link 1</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>-->
+        <nav id="navbar" class="nav flex flex-row-ns flex-column items-center">
+            <a href="/">
+                <img src="assets/yin-yang-logo.png" class="mw9 mt1 h3-ns h2 invert" alt="home-title">
+            </a>
+            <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden tc" id="name-title">Y A N G</h1>
+            <ul>
+                <li>
+                    <a href="#" class="handwritten">Nav Item</a>
+                    <ul>
+                        <li><a href="#" class="tc">Subnav Item</a></li>
+                        <li><a href="#" class="tc">Subnav Item</a></li>
+                        <li><a href="#" class="tc">Subnav Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="handwritten">Nav Item</a>
+                    <ul>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                        <li><a href="#">Subnav Item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mt5">
+        <div class="flex flex-column w-100 vh-100 justify-center items-center">
+            <div class="pa4">
+                <img src="img/big-boy.jpg" class="br-100 h4 w4 dib ba bw2 pa3" alt="avatar">
+            </div>
+            <span class="f3 i">Hiya, hiya. I'm</span>
+            <span class="f1 pt3 b nova" id="center-name">YANG CHEN</span>
 
-                </div>
-                <div class="flex justify-center mr7-ns handwritten">
-                    <a href="#home" class="white dim navbar-link">Home</a>
-                    <a href="#news" class="white dim navbar-link">Writing</a>
-                    <a href="#contact" class="white dim navbar-link">Contact</a>
-                </div>
-            </nav>
+            <span class="pt4 i">Writer. Boxer. Aspiring Web Developer.</span>
+            <span class="pt1 mb6">(scroll down to learn more!)</span>
         </div>
-        <div>
-            <div class="flex flex-column w-100 vh-100 justify-center items-center">
-                <div class="pa4 tc">
-                    <img src="img/big-boy.jpg" class="br-100 h4 w4 dib ba bw2 pa3" alt="avatar">
-                </div>
-                <span class="f3 i">Hiya, hiya. I'm</span>
-                <span class="f1 pt3 b nova" id="center-name">YANG CHEN</span>
-
-                <span class="pt4 i">Writer. Boxer. Aspiring Web Developer.</span>
-                <span class="pt1 mb6">(scroll down to learn more!)</span>
+    </div>
+    <div class="flex flex-column items-center mw9">
+        <h1 class="tc">This is my work and passion.</h1>
+        <div class="flex flex-row-ns flex-column pa2">
+            <img src="assets/300.png" class="mr6-ns">
+            <div class="w-70">
+                <p>
+                    Testing Testing Testing
+                </p>
             </div>
         </div>
-        <div class="pt0 pa7-ns">
-            <h1 class="tc">This is me in 3D.</h1>
-            <div class="flex flex-column items-center">
-                <div class="flex h5 mw5">
-                    <div>
-                        <h3>Placement</h3>
+        <div class="flex flex-row-ns flex-column pa2">
+            <img src="assets/300.png" class="mr6-ns">
+            <div class="w-70">
+                <p>
+                    Testing Testing Testing
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row-ns flex-column pa2">
+            <img src="assets/300.png" class="mr6-ns">
+            <div class="w-70">
+                <p>
+                    Testing Testing Testing
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="vh-100">
+        <h1 class="tc">This is me in 3D.</h1>
+        <div class="flex flex-column items-center mw9">
+            <div class="">
+                <div class="flex flex-row-ns flex-column-m flex-column items-center">
+                    <div class="flex">
+                        <img src="assets/bench-press.svg" class="h4 pt2"></img>
+                        <img src="assets/boxing-gloves.svg" class="h4 pt3"></img>
                     </div>
-                    <div>
-                        <h3 class="tc">Physical</h3>
-                        <p>II'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm
-                            big on I'm big on I'm big on I'm big on 'm big on
+                    <div class="mw9-ns mw6-m mw5 ml4-ns ml0">
+                        <h3 class="tr">Physical</h3>
+                        <p class="lh-copy measure-narrow f3-ns f5 tr">
+                            Strength training and general fitness are integral to my life. I like teaching myself how to
+                            be a better lifter, runner, and now boxer. In my physical journey, I'm aiming to be a boxing
+                            trainer at my university.
                         </p>
                     </div>
                 </div>
-                <div class="bg-white mw5">
-                    <h3 class="tc">Mental</h3>
-                    <p>TII'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big
-                        on I'm big on I'm big on I'm big on 'm big on esting</p>
-                </div>
-                <div class="bg-white mw5">
-                    <h3 class="tc">Emotional</h3>
-                    <p>II'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big on I'm big
-                        on I'm big on I'm big on I'm big on 'm big on </p>
+                <div class="flex flex-row-ns flex-column items-center">
+                    <div class="mw9-ns mw5 mr4-ns mr0">
+                        <h3>Mental</h3>
+                        <p class="lh-copy measure-narrow f3-ns f5">
+                            I don't know yet what I'm going to write for the mental component so I'm leaving behind some
+                            placement text yippeee
+                        </p>
+                    </div>
+                    <div class="flex">
+                        <img src="assets/bench-press.svg" class="h4 pt2"></img>
+                        <img src="assets/boxing-gloves.svg" class="h4 pt3"></img>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <h1 class="tc">My Work</h1>
-        </div>
+    </div>
     </div>
 
     <script src="scripts/sticky_navbar.js"></script>
