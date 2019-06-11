@@ -106,8 +106,11 @@ html {
     }
 }
 
-
-
+@media only screen and (max-width: 500px) {
+    .nav {
+        padding-bottom: 10px;
+    }
+}
 .nav ul {
     zoom:1;
     list-style:none;
@@ -131,7 +134,7 @@ html {
 }
 @media only screen and (min-width: 1000px) {
     .nav > ul {
-        margin: 0 0 0 35vw;
+        margin: 0 0 0 20vw;
     }
 }
 .nav ul:before,.nav ul:after {
@@ -165,7 +168,8 @@ html {
     border:none;
 }
 .nav li ul a:hover {
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,1);
+    border-radius: 15px 50px;
 }
 
 .nav li ul {

@@ -26,8 +26,11 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/yang.css" />
     <link rel="stylesheet" href="css/tachyons.min.css" />
-
     <link rel="stylesheet" href="css/home.css" />
+
+    <!-- JS Scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
     <!-- Icon Assets -->
     <link rel="icon" type="image/png" href="assets/yin-yang.png" />
 
@@ -46,33 +49,36 @@
                 <img src="assets/yin-yang-logo.png" class="mw9 mt1 h3-ns h2 invert" alt="home-title">
             </a>
             <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden tc" id="name-title">Y A N G</h1>
-            <ul>
+            <ul class="f5-ns f7">
                 <li>
-                    <a href="#" class="handwritten">Technical Blog</a>
+                    <a href="javascript:;" class="about-nav handwritten dim">About Me</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="project-nav handwritten dim">Projects</a>
                     <ul class="dropdown">
-                        <li><a href="" class="handwritten">Subnav</a></li>
-                        <li><a href="" class="handwritten">Subnav</a></li>
-                        <li><a href="" class="handwritten">Subnav</a></li>
+                        <li><a href="javascript:;" class="handwritten dim">Subnav</a></li>
+                        <li><a href="javascript:;" class="handwritten dim">Subnav</a></li>
+                        <li><a href="javascript:;" class="handwritten dim">Subnav</a></li>
                     </ul>
                 </li>
                 <li>
-                    <button>About Me</button>
+                    <a href="#" class="handwritten dim">Technical Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="" class="handwritten dim">Subnav</a></li>
+                        <li><a href="" class="handwritten dim">Subnav</a></li>
+                        <li><a href="" class="handwritten dim">Subnav</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" class="handwritten">Writing</a>
+                    <a href="#" class="handwritten dim">Writing</a>
                     <ul class="dropdown bg-red">
-                        <li><a href="#" class="handwritten">Subnav Item</a></li>
-                        <li><a href="#" class="handwritten">Subnav Item</a></li>
-                        <li><a href="#" class="handwritten">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten dim">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten dim">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten dim">Subnav Item</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="handwritten">Projects</a>
-                    <ul class="dropdown">
-                        <li><a href="#" class="handwritten">Subnav Item</a></li>
-                        <li><a href="#" class="handwritten">Subnav Item</a></li>
-                        <li><a href="#" class="handwritten">Subnav Item</a></li>
-                    </ul>
+                    <a href="" class="handwritten dim">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -92,7 +98,7 @@
     <div class="block-section flex flex-column items-center mw9">
         <h1 class="tc">This is my work and passion.</h1>
         <div class="flex flex-row-ns flex-column pa2">
-            <img src="assets/300.png" class="mr6-ns">
+            <img src="assets/300.png" class="mr6-ns br-pill">
             <div class="w-70">
                 <p>
                     Testing Testing Testing
@@ -100,7 +106,7 @@
             </div>
         </div>
         <div class="flex flex-row-ns flex-column pa2">
-            <img src="assets/300.png" class="mr6-ns">
+            <img src="assets/300.png" class="mr6-ns br-pill">
             <div class="w-70">
                 <p>
                     Testing Testing Testing
@@ -108,7 +114,7 @@
             </div>
         </div>
         <div class="flex flex-row-ns flex-column pa2">
-            <img src="assets/300.png" class="mr6-ns">
+            <img src="assets/300.png" class="mr6-ns br-pill">
             <div class="w-70">
                 <p>
                     Testing Testing Testing

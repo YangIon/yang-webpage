@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/YangIon/yang-webpage#readme",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "jquery": "^3.4.1"
   }
 }
