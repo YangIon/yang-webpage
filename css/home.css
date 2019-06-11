@@ -155,9 +155,9 @@ html {
 .nav a:hover {
     text-decoration:none;
 }
-.nav li ul {
-    background:#000000;
-}
+/*.nav li ul {
+    background-color: #434343;
+}*/
 .nav li ul li {
     width:120px;
 }
@@ -190,4 +190,35 @@ html {
 .nav ul > li:hover ul li {
     height:36px;
 }
+}
+
+/* Block Sections */
+@media only screen and (min-width: 1400px) {
+    .block-section > h1:before {
+        content: "";
+        display: inline-block;
+        border-right: 80px solid;
+        height: 1px;
+        margin: 0 10px 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .block-section > h1:after {
+        content: "";
+        display: inline-block;
+        border-right: 80px solid;
+        height: 1px;
+        margin: 0 0 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .block-section > h1:after {
+        content: "";
+        display: block;
+        border: 0.5px solid;
+        margin: 10px 0 0 0;
+
+    }
 }

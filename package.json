@@ -1,0 +1,22 @@
+{
+  "name": "yang-webpage",
+  "version": "1.0.0",
+  "description": "Yang Personal Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangIon/yang-webpage.git"
+  },
+  "author": "Yang Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YangIon/yang-webpage/issues"
+  },
+  "homepage": "https://github.com/YangIon/yang-webpage#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

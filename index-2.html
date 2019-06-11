@@ -41,28 +41,6 @@
 
 <body>
     <div id="container" class="flex flex-column mw9">
-        <!--<div class="nav-container">
-            <nav id="navbar" class="flex-ns items-center justify-between mw9">
-                <div class="flex-ns mb0-ns ml4-ns justify-center mt0-ns mt2 tc">
-                    <a href="/" class="mt1">
-                        <img src="assets/yin-yang-logo.png" class="mw9 h3-ns h2 invert" alt="home-title">
-                    </a>
-                    <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden" id="name-title">Y A N G</h1>
-                </div>
-                <div class="flex justify-center mr7-ns mt3-m handwritten">
-                    <a href="#home" class="f5-ns f7 white dim navbar-link">Home</a>
-                    <a href="#writing" class="f5-ns f7 white dim navbar-link">Writing</a>
-                    <a href="#contact" class="f5-ns f7 white dim navbar-link">Contact</a>
-                    <div class="dropdown">
-                        <button class="dropbtn navbar-link f5-ns f7 dim">Dropdown</button>
-                        <div class="dropdown-content">
-                            <a href="#" class="dim">Link 1</a>
-                            <a href="#" class="dim">Link 1</a>
-                            <a href="#" class="dim">Link 1</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>-->
         <nav id="navbar" class="nav flex flex-row-ns flex-column items-center">
             <a href="/">
                 <img src="assets/yin-yang-logo.png" class="mw9 mt1 h3-ns h2 invert" alt="home-title">
@@ -70,19 +48,30 @@
             <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden tc" id="name-title">Y A N G</h1>
             <ul>
                 <li>
-                    <a href="#" class="handwritten">Nav Item</a>
-                    <ul>
-                        <li><a href="#" class="tc">Subnav Item</a></li>
-                        <li><a href="#" class="tc">Subnav Item</a></li>
-                        <li><a href="#" class="tc">Subnav Item</a></li>
+                    <a href="#" class="handwritten">Technical Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="" class="handwritten">Subnav</a></li>
+                        <li><a href="" class="handwritten">Subnav</a></li>
+                        <li><a href="" class="handwritten">Subnav</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="handwritten">Nav Item</a>
-                    <ul>
-                        <li><a href="#">Subnav Item</a></li>
-                        <li><a href="#">Subnav Item</a></li>
-                        <li><a href="#">Subnav Item</a></li>
+                    <button>About Me</button>
+                </li>
+                <li>
+                    <a href="#" class="handwritten">Writing</a>
+                    <ul class="dropdown bg-red">
+                        <li><a href="#" class="handwritten">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten">Subnav Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="handwritten">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="#" class="handwritten">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten">Subnav Item</a></li>
+                        <li><a href="#" class="handwritten">Subnav Item</a></li>
                     </ul>
                 </li>
             </ul>
@@ -100,7 +89,7 @@
             <span class="pt1 mb6">(scroll down to learn more!)</span>
         </div>
     </div>
-    <div class="flex flex-column items-center mw9">
+    <div class="block-section flex flex-column items-center mw9">
         <h1 class="tc">This is my work and passion.</h1>
         <div class="flex flex-row-ns flex-column pa2">
             <img src="assets/300.png" class="mr6-ns">
@@ -127,7 +116,7 @@
             </div>
         </div>
     </div>
-    <div class="vh-100">
+    <div class="block-section second flex flex-column items-center mw9 vh-100">
         <h1 class="tc">This is me in 3D.</h1>
         <div class="flex flex-column items-center mw9">
             <div class="">
@@ -164,6 +153,7 @@
     </div>
 
     <script src="scripts/sticky_navbar.js"></script>
+    <script src="scripts/menu_nav.js"></script>
 
 </body>
 
