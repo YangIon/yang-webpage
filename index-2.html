@@ -24,8 +24,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="css/yang.css" />
-    <link rel="stylesheet" href="css/tachyons.min.css" />
+    <link rel="stylesheet" href="css/tailwind-build.css" />
+    <link rel="stylesheet" href="css/fonts/fonts.css" />
     <link rel="stylesheet" href="css/home.css" />
 
     <!-- JS Scripts -->
@@ -43,13 +43,15 @@
 </head>
 
 <body>
-    <div id="container" class="flex flex-column mw9">
-        <nav id="navbar" class="nav flex flex-row-ns flex-column items-center">
+    <div id="container">
+        <!-- NAVBAR MATERIAL -->
+        <!-- TODO: Adjust for sm, m, lg screen res -->
+        <nav id="navbar" class="nav flex flex-col sm:flex-row items-center px-1">
             <a href="/">
-                <img src="assets/yin-yang-logo.png" class="mw9 mt1 h3-ns h2 invert" alt="home-title">
+                <img src="assets/yin-yang-logo.png" class="mt-1 h-12 invert" alt="home-logo">
             </a>
-            <h1 class="f4-ns f5 nova pre ml3-ns overflow-hidden tc" id="name-title">Y A N G</h1>
-            <ul class="f5-ns f7">
+            <h1 class="text-lg whitespace-pre text-center nova mb-4" id="name-title">Y A N G</h1>
+            <ul class="text-sm">
                 <li>
                     <a href="javascript:;" class="about-nav handwritten dim">About Me</a>
                 </li>
@@ -71,96 +73,208 @@
                 </li>
                 <li>
                     <a href="#" class="handwritten dim">Writing</a>
-                    <ul class="dropdown bg-red">
+                    <ul class="dropdown">
                         <li><a href="#" class="handwritten dim">Subnav Item</a></li>
                         <li><a href="#" class="handwritten dim">Subnav Item</a></li>
                         <li><a href="#" class="handwritten dim">Subnav Item</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="" class="handwritten dim">Contact</a>
-                </li>
             </ul>
         </nav>
-    </div>
-    <div class="mt5">
-        <div class="flex flex-column w-100 vh-100 justify-center items-center">
-            <div class="pa4">
-                <img src="img/big-boy.jpg" class="br-100 h4 w4 dib ba bw2 pa3" alt="avatar">
-            </div>
-            <span class="f3 i">Hiya, hiya. I'm</span>
-            <span class="f1 pt3 b nova" id="center-name">YANG CHEN</span>
 
-            <span class="pt4 i">Writer. Boxer. Aspiring Web Developer.</span>
-            <span class="pt1 mb6">(scroll down to learn more!)</span>
-        </div>
-    </div>
-    <div class="block-section flex flex-column items-center mw9">
-        <h1 class="tc">This is my work and passion.</h1>
-        <div class="flex flex-row-ns flex-column pa2">
-            <img src="assets/300.png" class="mr6-ns br-pill">
-            <div class="w-70">
-                <p>
-                    Testing Testing Testing
-                </p>
+        <!-- TITLE HEADER -->
+        <!-- TODO: Adjust for sm, m, lg screen res -->
+        <div class="pb-48 sm:pt-6 pt-48-pixel flex flex-col items-center justify-center h-screen">
+            <div class="p-1 sm:pt-8">
+                <img src="img/big-boy.jpg" class="h-64 sm:h-48 p-5  rounded-full border-4" alt="home-avatar">
+            </div>
+            <span class="p-2 sm:pb-0 sm:pt-0 sm:text-xs ">Hiya, hiya. I'm</span>
+            <span id="center-name" class="text-5xl sm:text-3xl font-bold nova">YANG CHEN</span>
+            <!-- SUBTITLE -->
+            <div class="flex flex-col items-center p-1 sm:text-xs">
+                <span>Writer. Boxer. Aspiring Web Developer.</span>
+                <span>(scroll down to learn more!)</span>
             </div>
         </div>
-        <div class="flex flex-row-ns flex-column pa2">
-            <img src="assets/300.png" class="mr6-ns br-pill">
-            <div class="w-70">
-                <p>
-                    Testing Testing Testing
-                </p>
-            </div>
-        </div>
-        <div class="flex flex-row-ns flex-column pa2">
-            <img src="assets/300.png" class="mr6-ns br-pill">
-            <div class="w-70">
-                <p>
-                    Testing Testing Testing
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="block-section second flex flex-column items-center mw9 vh-100">
-        <h1 class="tc">This is me in 3D.</h1>
-        <div class="flex flex-column items-center mw9">
-            <div class="">
-                <div class="flex flex-row-ns flex-column-m flex-column items-center">
-                    <div class="flex">
-                        <img src="assets/bench-press.svg" class="h4 pt2"></img>
-                        <img src="assets/boxing-gloves.svg" class="h4 pt3"></img>
-                    </div>
-                    <div class="mw9-ns mw6-m mw5 ml4-ns ml0">
-                        <h3 class="tr">Physical</h3>
-                        <p class="lh-copy measure-narrow f3-ns f5 tr">
-                            Strength training and general fitness are integral to my life. I like teaching myself how to
-                            be a better lifter, runner, and now boxer. In my physical journey, I'm aiming to be a boxing
-                            trainer at my university.
+
+        <!-- BLOCK SECTIONS -->
+        <!-- TODO: Adjust for sm, m, lg screen res -->
+        <div class="section-container">
+            <!-- WORK AND PROJECTS -->
+            <div class="block-section flex flex-col items-center">
+                <h2 class="text-2xl">This is my work and passion.</h2>
+                <div class="pt-6">
+                    <img src="assets/300.png">
+                    <div>
+                        <p>
+                            Testing testing testing
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-row-ns flex-column items-center">
-                    <div class="mw9-ns mw5 mr4-ns mr0">
-                        <h3>Mental</h3>
-                        <p class="lh-copy measure-narrow f3-ns f5">
-                            I don't know yet what I'm going to write for the mental component so I'm leaving behind some
-                            placement text yippeee
+                <div class="pt-6">
+                    <img src="assets/300.png">
+                    <div>
+                        <p>
+                            Testing testing testing
                         </p>
                     </div>
+                </div>
+                <div class="pt-6">
+                    <img src="assets/300.png">
+                    <div>
+                        <p>
+                            Testing testing testing
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-6">
+                    <img src="assets/300.png">
+                    <div>
+                        <p>
+                            Testing testing testing
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT ME -->
+            <div class="block-section flex flex-col items-center pt-12">
+                <h2 class="text-2xl">This is me in 3D.</h2>
+                
+                <!-- DIM[0] -->
+                <div class="dimen-0 pt-6 flex flex-col items-center">
+                    
+                    <!-- DIM[0] IMAGES -->
                     <div class="flex">
-                        <img src="assets/bench-press.svg" class="h4 pt2"></img>
-                        <img src="assets/boxing-gloves.svg" class="h4 pt3"></img>
+                        <img src="assets/bench-press.svg" class="h-24">
+                        <img src="assets/boxing-gloves.svg" class="h-24 absolute pt-4">
+                    </div>
+
+                    <!-- DIM[0] DESCRIPTION -->
+                    <div class="p-8">
+                        <h3 class="text-lg text-center">Physical</h3>
+                        <p class="tracking-widest border-l-2 pl-3 border-r-2 pr-1">Strength training and overall fitness are integral to my life. I like teaching myself how to
+                            be a better lifter, runner, and now boxer. Right now, I'm aiming to be a boxing trainer at
+                            my university.</p>
+                    </div>
+                </div>
+
+                <!-- DIM[1] -->
+                <div class="flex flex-col items-center">
+                    
+                    <!-- DIM[1] IMAGES -->
+                    <div class="flex">
+                       <img src="assets/brain.svg" class="h-24"> 
+                    </div>
+
+                    <!-- DIM[1] DESCRIPTION -->
+                    <div class="p-8">
+                        <h3 class="text-lg text-center">Mental</h3>
+                        <p class="tracking-widest border-l-2 pl-3 border-r-2 pr-1">I live to explore my curiosity and figure out what I don't know. I'm learning to make discomfort my best friend. And everything that I find myself in love with—coding, writing, forming deeper relationships, and much more—is everything I find worth committing to.</p>
+                    </div>
+                </div>
+               
+                <!-- DIM[2] -->
+                <div class="flex flex-col items-center">
+                    
+                    <!-- DIM[2] IMAGES -->
+                    <div class="flex">
+                       <img src="assets/love.svg" class="h-24"> 
+                    </div>
+
+                    <!-- DIM[2] DESCRIPTION -->
+                    <div class="p-8">
+                        <h3 class="text-lg text-center">Emotional</h3>
+                        <p class="tracking-widest border-l-2 pl-3 border-r-2 pr-2">Something important that I like to remind myself is that my worldview is subjective and how I feel is one remarkable feat of subjectivity. But how I reflect on and use my emotions in my day-to-day can always turn out some great things for the world.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WRITING -->
+            <div class="block-section flex flex-col items-center">
+                <h2 class="text-2xl">This is me raising a pen.</h2>
+                <ul class="pt-4 text-center">
+                    <li><a href="#">Yang & Naive</a></li>
+                    <li><a href="#">Influences</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="block-section flex flex-col pt-12">
+                <h2 class="text-2xl px-6 text-center">You know a bit about me, now let's talk!</h2>
+                <p>
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                    Test text
+                </p>
+            </footer>
+        </div>
+
+
+        <!-- 
+         
+        <div class="section-container">
+
+            <div class="block-section second flex flex-column items-center mw9 vh-100">
+                <h1 class="tc">This is me in 3D.</h1>
+                <div class="flex flex-column items-center mw9">
+                    <div class="">
+                        <div class="flex flex-row-ns flex-column-m flex-column items-center">
+                            <div class="flex">
+                                <img src="assets/bench-press.svg" class="h4 pt2"></img>
+                                <img src="assets/boxing-gloves.svg" class="h4 pt3"></img>
+                            </div>
+                            <div class="mw9-ns mw6-m mw5 ml4-ns ml0-m ml0">
+                                <h3 class="tr">Physical</h3>
+                                <p class="lh-copy measure-narrow f3-ns f5 tr">
+                                    Strength training and general fitness are integral to my life. I like teaching
+                                    myself
+                                    how to
+                                    be a better lifter, runner, and now boxer. In my physical journey, I'm aiming to be
+                                    a
+                                    boxing
+                                    trainer at my university.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mw9-ns mw5 mr4-ns mr0-m">
+                            <h3>Mental</h3>
+                            <p class="lh-copy measure-narrow f3-ns f5">
+                                I don't know yet what I'm going to write for the mental component so I'm leaving
+                                behind
+                                some
+                                placement text yippeee
+                            </p>
+                        </div>
+                        <div class="flex">
+                            <img src="assets/bench-press.svg" class="h4 pt2"></img>
+                            <img src="assets/boxing-gloves.svg" class="h4 pt3"></img>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="box">
+        TESTING
     </div>
-
-    <script src="scripts/sticky_navbar.js"></script>
-    <script src="scripts/menu_nav.js"></script>
-
+    </div>
+ -->
+        <script src="scripts/sticky_navbar.js"></script>
+        <script src="scripts/menu_nav.js"></script>
+        <script src="scripts/scroll_view.js"></script>
 </body>
 
 </html>

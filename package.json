@@ -19,5 +19,8 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.0.4"
   }
 }
